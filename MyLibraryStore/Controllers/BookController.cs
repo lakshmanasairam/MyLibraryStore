@@ -46,6 +46,11 @@ namespace MyLibraryStore.Controllers
             return RedirectToAction("Index","Book");
         }
 
+        public IActionResult NewAction()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Delete(int? id)
         {
